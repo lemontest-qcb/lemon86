@@ -22,4 +22,4 @@ def exec_search(driver,url,name,passwd,key):
     driver.find_element(By.ID,'searchBtn').click()
     time.sleep(0.1) # 强制等待辅助
     text = driver.find_element(By.XPATH,'//tr[@id="datagrid-row-r1-2-0"]//td[@field="number"]/div').text # 获取值
-    return    # 返回文本
+    return  text  # 返回文本
